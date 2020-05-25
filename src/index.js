@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Toto from './App';
 import * as serviceWorker from './serviceWorker';
 
+// Cette commande permet de convertir le composant App (qui contient toute notre application)
+// en éléments du DOM et de les insérer dans la <div id="root" />
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Toto />
   </React.StrictMode>,
   document.getElementById('root')
 );
