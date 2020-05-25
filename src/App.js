@@ -11,8 +11,8 @@ const App = () => {
     <BrowserRouter>
       <Switch>
         <Redirect exact from="/" to="/articles" />
-        <Route path="/articles/:id" component={ArticlePage} />
-        <Route path="/articles" component={ArticleListPage} />
+        <Route path="/articles/:id{\d+}" component={ArticlePage} />
+        <Route exact path="/articles" component={ArticleListPage} />
         <Route component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
