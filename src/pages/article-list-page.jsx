@@ -18,6 +18,7 @@ const ArticleListPage = (props) => {
               */}
               <ArticlePreview
                 {...article}
+                id={index}
               />
             </li>
         )}
