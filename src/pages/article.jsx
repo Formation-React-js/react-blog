@@ -1,8 +1,8 @@
 import React from 'react';
 import articles from '../data/articles';
 import NotFoundPage from './not-found';
-import Layout from '../components/layout';
 import { Link } from 'react-router-dom';
+import { Layout } from '../components';
 
 // Le composant page article généré par un composant Route hérite automatiquement des
 // données du router via ses props. La propriété "match" contient les informations

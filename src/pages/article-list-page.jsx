@@ -1,7 +1,6 @@
 import React from 'react';
-import ArticlePreview from '../components/article-preview';
 import articles from '../data/articles';
-import Layout from '../components/layout';
+import { Layout, ArticlePreview } from '../components';
 
 const ArticleListPage = (props) => {
   return (
