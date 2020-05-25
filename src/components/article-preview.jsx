@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ArticlePreview = (props) => {
+// Le nom "props" peut être remplacé par une série de propriétés entre accolades
+// pour les extraire directement de l'objet et les assigner à des constantes.
+// La ligne 9 est l'équivalent de:
+// const ArticlePreview = (props) => {
+//   const { title, content, date } = props;
+const ArticlePreview = ({ title, content, date }) => {
   return (
     <article>
-      <h2>{props.title}</h2>
-      <p>{props.content}</p>
-      <div>{props.date.toLocaleDateString()}</div>
+      <h2>{title}</h2>
+      <p>{content}</p>
+      <div>{date.toLocaleDateString()}</div>
     </article>
   );
 }

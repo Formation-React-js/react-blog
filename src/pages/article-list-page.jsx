@@ -10,10 +10,12 @@ const ArticleListPage = (props) => {
       {articles.map(
         (article, index) =>
           <li key={index}>
-            <ArticlePreview              
-              title={article.title}
-              date={article.date}
-              content={article.content}
+            {/* Génère un composant en lui passant comme props toutes les propriétés
+            de chaque objet article
+            Remplace title={article.title}, content={article.content}, etc.
+             */}
+            <ArticlePreview
+              {...article}
             />
           </li>
       )}
